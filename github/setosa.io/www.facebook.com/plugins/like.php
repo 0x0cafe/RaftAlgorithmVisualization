@@ -1,0 +1,1 @@
+No Content: https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsetosa.io%2Fev%2Fordinary-least-squares-regression%2F&width=150&height=24&layout=button_count&action=like&show_faces=false&share=true
