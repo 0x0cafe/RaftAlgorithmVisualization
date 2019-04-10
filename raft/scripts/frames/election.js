@@ -98,13 +98,13 @@ define([], function () {
             subtitle('<h2>一旦candidate获得多数票，它就会成为leader。</h2>');
         })
         .after(model().defaultNetworkLatency * 0.25, function () {
-            subtitle('<h2>Leader开始向其follower发送<em>附加条目</em>消息。</h2>');
+            subtitle('<h2>Leader开始向其follower发送<em>附加term</em>消息。</h2>');
         })
         .after(1, function () {
             subtitle('<h2>这些消息按<span style ="color:red">心跳超时</span>指定的间隔发送。</h2>');
         })
         .after(model().defaultNetworkLatency, function () {
-            subtitle('<h2>然后，follower回复每个<em>附加条目</em>消息。</h2>');
+            subtitle('<h2>然后，follower回复每个<em>附加term</em>消息。</h2>');
         })
         .after(1, function () {
             subtitle('', false);
@@ -135,7 +135,7 @@ define([], function () {
             return (event.target.state() === "leader");
         })
         .after(1, function () {
-            subtitle('<h2>节点' + model().leader().id + '是具有条目' + model().leader().currentTerm() + '的leader。</h2>', false);
+            subtitle('<h2>节点' + model().leader().id + '是具有term' + model().leader().currentTerm() + '的leader。</h2>', false);
         })
         .after(1, wait).indefinite()
 
@@ -187,7 +187,7 @@ define([], function () {
         })
         .after(1, function () {
             model().resetLatencies();
-            subtitle('<h2>节点 ' + model().leader().id + '收到了大多数的投票' + model().leader().currentTerm() + '所以它将成为leader.</h2>', false);
+            subtitle('<h2>节点' + model().leader().id + '收到了大多数投票（term ' + model().leader().currentTerm() + '），所以它将成为leader.</h2>', false);
         })
         .after(1, wait).indefinite()
 

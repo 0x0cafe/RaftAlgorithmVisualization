@@ -226,7 +226,7 @@ define(["../model/log_entry"], function (LogEntry) {
                 node("c")._commitIndex = 1;
                 layout.invalidate();
             });
-            model().subtitle = '<h2>leader然后通知follwer该条目已被提交。</h2>'
+            model().subtitle = '<h2>leader然后通知follwer该term已被提交。</h2>'
                            + model().controls.html();
             layout.invalidate();
         })

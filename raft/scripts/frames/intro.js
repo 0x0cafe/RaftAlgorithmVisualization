@@ -39,7 +39,7 @@ define([], function () {
 
         .after(800, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h2>我们有一个单节点系统</h2>'
+            frame.model().subtitle = '<h2>我们有一个单节点系统。</h2>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
