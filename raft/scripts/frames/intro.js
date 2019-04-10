@@ -101,7 +101,7 @@ define([], function () {
         })
         .after(100, wait).indefinite()
         .after(100, function () {
-            frame.model().subtitle = '<h3>Coming to agreement, or <em>consensus</em>, on that value is easy with one node.</h3>'
+            frame.model().subtitle = '<h3>一个节点很容易就这个值达成一致或共识。</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -110,7 +110,7 @@ define([], function () {
 
         .after(100, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h3>But how do we come to consensus if we have multiple nodes?</h3>'
+            frame.model().subtitle = '<h3>但是，如果我们有多个节点，我们如何达成共识？</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
@@ -127,7 +127,7 @@ define([], function () {
 
         .after(100, function () {
             frame.snapshot();
-            frame.model().subtitle = '<h3>That\'s the problem of <em>distributed consensus</em>.</h3>'
+            frame.model().subtitle = '<h3>这就是分布式共识问题。</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
