@@ -56,7 +56,7 @@ define([], function () {
             layout.invalidate();
         })
         .after(600, function () {
-            frame.model().subtitle = '<h3>例如，你可以认为这是一个存储着一个数据的数据库服务<span style="color:steelblue">节点</span></h3>'
+            frame.model().subtitle = '<h3>例如，你可以认为这是一个存储着一个数据的数据库服务<span style="color:steelblue">节点</span>。</h3>'
                            + frame.model().controls.html();
             layout.invalidate();
         })
