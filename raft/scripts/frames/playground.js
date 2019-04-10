@@ -12,7 +12,7 @@ define([], function () {
             client;
 
         frame.after(1, function () {
-            model.subtitle = '<h1>Test</h1>';
+            model.subtitle = '<h1>测试</h1>';
             nodes.a = model.nodes.create("A");
             nodes.a._value = "X";
             layout.invalidate();
